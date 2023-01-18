@@ -1,4 +1,5 @@
 import React from 'react'
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
@@ -25,19 +26,19 @@ export default function Navbar(props) {
 
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
                         <li className="nav-item ">
-                            <Link className={`nav-link active  `}  to="/" >Home</Link>
+                            <AnchorLink className={`nav-link active  `}  href="/" >Home</AnchorLink>
                         </li>
                         <li className="nav-item">
-                            <Link className={`nav-link active `} to= "/News" containerId="news">News</Link>
+                            <AnchorLink className={`nav-link active `} onClick='' href= "#news" containerid="news">News</AnchorLink>
                         </li>
                         <li className="nav-item">
-                            <Link className={`nav-link active `} to="/about" >Weather</Link>
+                            <AnchorLink className={`nav-link active `} href="/Weather" >Weather</AnchorLink>
                         </li>
                         <li className="nav-item">
-                            <Link className={`nav-link active `} to="/about" >{props.about}</Link>
+                            <AnchorLink className={`nav-link active `} href="/about" >{props.about}</AnchorLink>
                         </li>
                         <li className="nav-item">
-                            <Link className={`nav-link active `} to="/about" >Contact us</Link>
+                            <AnchorLink className={`nav-link active `} href="/about" >Contact us</AnchorLink>
                         </li>
 
                         

@@ -28,14 +28,11 @@ function App() {
     <BrowserRouter>
       <Navbar title='NewsMonkey' about='About Us' mode = {mode} toggleMode = {toggleMode}/>
       
-      
-    
-    
       <Slider/>
 
       <div className="container">
 
-      <News mode = {mode} />
+      <News mode = {mode} toggleMode = {toggleMode}/>
       </div>
     </BrowserRouter>
     </>
