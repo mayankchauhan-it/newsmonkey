@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Amiri:wght@700&family=Noto+Serif+Toto:wght@400;600;700&family=Rowdies:wght@700&display=swap');
+
+
+
+.form-check-input:focus {
+  /* border-color: #86b7fe; */
+  /* outline: 0; */
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* .navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: none!important;
+  align-items: center;
+} */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.cfont{
+  font-family: 'Abril Fatface', cursive;  
+  border: 1px solid ;
+  padding: 5px;
+  flex-grow: none!important;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-light .navbar-brand {
+  color: rgb(215, 119, 3);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-nav{
+  /* border: 1px solid ; */
+  align-items: center;
+  justify-content: center;
+  font-family: 'Noto Serif Toto', serif; 
+  font-size: 20px;
+
+}
+
+
+.ge{
+  width: 50%;
+  height: 100%;
+}
+
+
+.news{
+  /* width: auto; */
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+  
+  
+
+.xfont{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 30px;
+  font-weight: 400;
 }

@@ -1,24 +1,44 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar.js'
+import Slider from './components/Slider.js'
+import News from './components/News.js'
+import React, {useState} from 'react';
+
+import {BrowserRouter} from 'react-router-dom';
+
+
 
 function App() {
+
+  const [mode, setmode] = useState('light');
+  
+  const toggleMode = () => {
+    if (mode === 'light'){
+      setmode('dark');
+      document.body.style.backgroundColor = 'lightgrey'
+    }
+    else{
+      setmode('light');
+      document.body.style.backgroundColor = 'white'
+    }
+
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <BrowserRouter>
+      <Navbar title='NewsMonkey' about='About Us' mode = {mode} toggleMode = {toggleMode}/>
+      
+      
+    
+    
+      <Slider/>
+
+      <div className="container">
+
+      <News mode = {mode} />
+      </div>
+    </BrowserRouter>
+    </>
   );
 }
 
