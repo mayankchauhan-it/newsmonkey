@@ -58,6 +58,20 @@
 
 .xfont{
   font-family: 'Abril Fatface', cursive;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 400;
+}
+
+
+.row{
+  /* border: 1px solid red; */
+  justify-items: center;
+
+}
+
+.card{
+  /* border: 1px solid pink; */
+  margin-left: auto;
+  padding: 30px;
+  
 }
