@@ -8,11 +8,6 @@
   box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
 }
 
-/* .navbar-collapse {
-  flex-basis: 100%;
-  flex-grow: none!important;
-  align-items: center;
-} */
 
 .cfont{
   font-family: 'Abril Fatface', cursive;  
@@ -21,6 +16,11 @@
   flex-grow: none!important;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
+
+}
+.cfont:hover{
+  color: black;
 
 }
 
@@ -75,3 +75,7 @@
   padding: 30px;
   
 }
+
+
+
+

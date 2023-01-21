@@ -20,7 +20,7 @@ export default function NewComponent(props) {
     //     {/* </div> */}
     // </div>
 
-    <div className="container">
+    <div id='news' className="container">
         <div className="row ">
             <div className={`col d-flex flex-row flex-wrap justify-content-evenly bg-${props.mode === 'light'?'light':'lightgray'} text-${props.mode === 'light'?'dark':'dark'}`}>
                 <NewNewsComponent mode={props.mode}></NewNewsComponent>

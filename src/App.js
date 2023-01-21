@@ -1,6 +1,8 @@
 import './App.css';
+import './App2.css';
 import Navbar from './components/Navbar.js'
-// import Slider from './components/Slider.js'  
+import Slider from './components/Slider.js'  
+import Weather from './components/Weather.js'  
 // import News from './components/News.js'
 import React, {useState} from 'react';
 
@@ -31,7 +33,7 @@ function App() {
     <BrowserRouter>
       <Navbar title='NewsMonkey' about='About Us' mode = {mode} toggleMode = {toggleMode}/>
       
-      {/* <Slider/> */}
+      <Slider/>
 
       {/* <div className="container">
 
@@ -43,6 +45,7 @@ function App() {
 
 
       <NewComponent mode={mode}></NewComponent>
+      <Weather mode={mode}></Weather>
     </BrowserRouter>
     </>
   );
