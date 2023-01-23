@@ -1,13 +1,15 @@
 import './App.css';
-import './App2.css';
+import './app2.css';
+import './sign_cs.css';
 import Navbar from './components/Navbar.js'
-import Slider from './components/Slider.js'  
-import Weather from './components/Weather.js'  
+// import Slider from './components/Slider.js'  
+// import Weather from './components/Weather.js'  
 // import News from './components/News.js'
 import React, {useState} from 'react';
 
 import {BrowserRouter} from 'react-router-dom';
-import NewComponent from './components/NewComponent';
+import Sign from './components/Sign';
+// import NewComponent from './components/NewComponent';
 // import Items from './components/Items';
 // import Items2 from './components/Items2';
 
@@ -33,7 +35,7 @@ function App() {
     <BrowserRouter>
       <Navbar title='NewsMonkey' about='About Us' mode = {mode} toggleMode = {toggleMode}/>
       
-      <Slider/>
+      {/* <Slider/> */}
 
       {/* <div className="container">
 
@@ -44,8 +46,11 @@ function App() {
       {/* <Items2 mode = {mode}/> */}
 
 
-      <NewComponent mode={mode}></NewComponent>
-      <Weather mode={mode}></Weather>
+      {/* <NewComponent mode={mode}></NewComponent> */}
+      {/* <Weather mode={mode}></Weather> */}
+      
+      <Sign mode={mode}></Sign>
+
     </BrowserRouter>
     </>
   );

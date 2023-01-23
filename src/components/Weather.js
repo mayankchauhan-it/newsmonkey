@@ -61,16 +61,16 @@ export default function weather(props) {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="container2">
-                                    <div class="background">
-                                        <div class="Circle1"></div>
-                                        <div class="Circle2"></div>
-                                        <div class="Circle3"></div>
-                                        <div class="content">
-                                            <h1 class="Condition"><i class="material-icons sun">wb_sunny</i> Sunny</h1>
-                                            <h1 class="Temp">72<span id="F">&#8457;</span></h1>
-                                            <h1 class="Time">09:35</h1>
-                                            <h1 class="Location"><i class="material-icons locationIcon">place</i> Raleigh, NC</h1>
+                                <div style={{backgroundColor: props.mode ==='light'?'#F17022':'black'}} className={`container2`}>
+                                    <div className="background">
+                                        <div style={{backgroundColor: props.mode ==='light'?'rgba(253,184,19,1)':'black'}} className={`Circle1`}></div>
+                                        <div style={{backgroundColor: props.mode ==='light'?'rgba(246,140,31,0.7)':'black'}} className="Circle2"></div>
+                                        <div style={{backgroundColor: props.mode ==='light'?'rgba(241,125,45,0.7)':'black'}} className="Circle3"></div>
+                                        <div className="content">
+                                            <h1 className="Condition"><i className="material-icons sun">wb_sunny</i> {wer.current.condition.text}</h1>
+                                            <h1 className="Temp">72<span id="F">&#8457;</span></h1>
+                                            <h1 className="Time">{wer.current.last_updated.split(" ")[1]}</h1>
+                                            <h1 className="Location"><i className="material-icons locationIcon">place</i> {wer.location.name.charAt(0).toUpperCase() + wer.location.name.slice(1)}</h1>
                                         </div>
                                     </div>
                                 </div>
