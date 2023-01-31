@@ -45,12 +45,18 @@ export default class slider extends Component {
   }
 }
 
-// import React from 'react'
+// // import React from 'react'
 
-// export default function Slider() {
-//   return (
-//     <div>
-//       Hello
-//     </div>
-//   )
-// }
+// // export default function Slider() {
+// //   return (
+// //     <div>
+// //       Hello
+// //     </div>
+// //   )
+// // }
+
+
+
+
+
+

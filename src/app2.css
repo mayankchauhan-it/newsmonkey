@@ -13,8 +13,8 @@ body{
     z-index: 10;
     position: relative;
     margin: 150px auto;
-    height: 90px;
-    width: 300px;
+    height: 30%;
+    width: 30%;
     /* background-color: #F17022; */
     border-radius: 10px;
     box-shadow: 2px 2px 1px rgba(0,0,0,0.2);
@@ -25,10 +25,10 @@ body{
 .Circle1{
     z-index: 100;
     position: absolute;
-    height: 80px;
-    width: 80px;
-    right: -20px;
-    top: -30px;
+    height: 186px;
+    width: 148px;
+    right: -33px;
+    top: -37px; 
     border-radius: 50%;
     /* background-color: rgba(253,184,19,1); */
     animation: enlarge;
@@ -39,10 +39,10 @@ body{
 .Circle2{
     z-index: 80;
     position: absolute;
-    height: 150px;
-    width: 150px;
-    right: -50px;
-    top: -70px;
+    height: 257px;
+    width: 212px;
+    right: -59px;
+    top: -58px;
     border-radius: 50%;
     /* background-color: rgba(246,140,31,0.7); */
     
@@ -54,10 +54,10 @@ body{
 .Circle3{
     z-index: 50;
     position: absolute;
-    height: 200px;
-    width: 200px;
-    right: -50px;
-    top: -100px;
+    height: 355px;
+    width: 291px;
+    right: -101px;
+    top: -98px;
     border-radius: 50%;
     /* background-color: rgba(241,125,45,0.7); */
     
@@ -80,7 +80,7 @@ body{
     position: absolute;
     font-family: "Roboto", sans-serif;
     font-weight: 100;
-    font-size: 20px;
+    font-size: 30px;
     left: 20px;  
     top: 10px;
 }
@@ -89,7 +89,7 @@ body{
     z-index: 1000;
     position: absolute;
     font-family: "Roboto", sans-serif;
-    font-size: 35px;
+    font-size: 20px;
     font-weight: 400;
     left: 20px;
     bottom: 5px;
@@ -99,7 +99,7 @@ body{
     z-index: 1000;
     font-family: "Roboto",sans-serif;
     font-weight: 100;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 
@@ -107,7 +107,7 @@ body{
     z-index: 1000;
     position: absolute;
     font-family: "Noto Sans", sans-serif;
-    font-size: 18px;
+    font-size: 40px;
     font-weight: 200;
     right: 20px;
     top: 10px;
@@ -122,9 +122,9 @@ body{
     z-index: 1000;
     position: absolute;
     font-family: "Noto Sans", sans-serif;
-    font-size: 12px;
+    font-size: 40px;
     font-weight: 200;
-    right: 20px;
+    right: 30px;
     bottom: 15px;
 }
 

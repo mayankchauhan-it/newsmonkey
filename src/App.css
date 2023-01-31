@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Amiri:wght@700&family=Noto+Serif+Toto:wght@400;600;700&family=Rowdies:wght@700&display=swap');
 
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
 .form-check-input:focus {
   /* border-color: #86b7fe; */
@@ -19,6 +19,7 @@
   text-decoration: none;
 
 }
+
 .cfont:hover{
   color: black;
 
@@ -29,12 +30,19 @@
 }
 
 .navbar-nav{
-  /* border: 1px solid ; */
-  align-items: center;
-  justify-content: center;
+  font-family: 'Noto Serif Toto', serif; 
+  font-size: 25px;
+  height: 90vh;
+  /* background-color: lightgray; */
+}
+
+.navbar-nav2{
   font-family: 'Noto Serif Toto', serif; 
   font-size: 20px;
-
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -79,3 +87,225 @@
 
 
 
+/* The switch - the box around the slider */
+.switch {
+  font-size: 15px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 1.5em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: .5s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1em;
+  width: 1.4em;
+  border-radius: 50%;
+  left: 10%;
+  bottom: 15%;
+  box-shadow: inset 8px -4px 0px 0px #ffffff;
+
+  transition: .5s;
+}
+
+/* input:checked + .slider {
+  background-color: #522ba7;
+} */
+
+input:checked + .slider:before {
+  transform: translateX(100%);
+  box-shadow: inset 15px -4px 0px 15px #ffffff;
+}
+
+
+.cname {
+  display: flex;
+}
+
+.form-check{
+  padding-left : 0;
+  margin: 0px 20px;
+}
+
+.mybox {
+  /* background-color: white; */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.menubar{
+  /* background-color: lightgray; */
+  width: 260px;
+  height: 100vh;
+  background: #FFFFFF;
+  box-shadow: 4px 6px 10px -6px black;
+}
+
+
+
+.container-fluid {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  padding-left: 1.5rem;
+  justify-items: left;
+  justify-content: flex-start;
+}
+/* .navfont {
+  font-size: 30px;
+  color: black;
+  font-family: 'Abril Fatface', cursive;
+  text-decoration: none;  
+
+
+} */
+
+
+
+
+.navbar-nav3 {
+  list-style: none;
+  height: 70vh;
+  width: 100%;
+  padding: 10px;
+}
+
+.nav-item {
+  padding-bottom: 10px;
+  padding: 0;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+
+ul{
+  padding-left: 0;
+}
+
+.navbar-nav .nav-link {
+  /* padding-right: 0;
+  padding-left: 1.5rem;
+  font-family: 'Noto Serif Toto', serif;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 10px;
+  height: 9vh;
+  display: flex;
+  align-items: center;
+  color: lightgray; */
+
+
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  padding: 12px 29px 12px 24px;
+  gap: 12px;
+  font-family: 'Raleway', sans-serif;
+  color: #B2B2B2;
+  width: 236px;
+  height: 44px;
+  left: 12px;
+  top: 214px;
+  font-weight: 300;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: rgb(34, 97, 221);
+  color: white;
+}
+
+.navtitle{
+  /* font-family: 'Noto Serif Toto', serif;
+  font-size: 30px;
+  margin-left: 1rem;
+  color: black; */
+
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: -11px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #333333;
+    /* border: 1px solid black; */
+    margin: 0px 30px 20px;
+
+
+}
+
+.navfont {
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 24px;
+  color: #333333;
+  text-decoration: none;
+}
+
+
+/* .ico{
+  background-color: #B2B2B2;
+} */
+
+.logoicon{
+  font-size: 3rem;
+  margin-right: 10px;
+}
+
+.iconstyle{
+  font-size: 25px;
+  width: 2.5rem;
+  /* border: 1px solid black; */
+  display: flex!important;
+  justify-content: center;
+}
+
+
+
+
+/* ================================================================================================================ */
+
+
+
+.navbar-nav-bottom {
+  list-style: none;
+  width: 100%;
+  padding: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+
+.roun{
+  background-color: black;
+}

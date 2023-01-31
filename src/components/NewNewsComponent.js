@@ -129,7 +129,7 @@ export default function NewNewsComponent(props) {
                                     props.mode === "light" ? "light" : "dark"
                                     } text-${props.mode === "light" ? "dark" : "light"}`}
                                     >
-                                <h5 className="card-title xfont">{art.title.slice(0,45)+'...'}</h5>
+                                <h5 className={`card-title xfont text-${props.mode === "light" ? "dark" : "light"}`}>{art.title.slice(0,45)+'...'}</h5>
                                 <p className="card-text">
                                     Some quick example text to build on the card title and make up
                                     the bulk of the card's content.

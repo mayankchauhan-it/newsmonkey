@@ -1,5 +1,5 @@
 import React from 'react'
-import AnchorLink from "react-anchor-link-smooth-scroll";
+// import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
@@ -24,32 +24,34 @@ export default function Navbar(props) {
                 {/* Menu List */}
                 <div className=" navbar-nav  " id="navbarSupportedContent">
 
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <ul className="navbar-nav3 me-auto mb-2 mb-lg-0 ">
                         <li className="nav-item ">
-                            <AnchorLink className={`nav-link active  `}  href="#carouselExampleIndicators" containerid="nav">Home</AnchorLink>
+                            <Link className={`nav-link active  `}  to ="/" containerid="nav">Home</Link>
                         </li>
                         <li className="nav-item">
-                            <AnchorLink className={`nav-link active `} onClick='' href= "#news" containerid="news">News</AnchorLink>
+                            <Link className={`nav-link active `} onClick='' to= "/hr" containerid="news">News</Link>
                         </li>
                         <li className="nav-item">
-                            <AnchorLink className={`nav-link active `} href="#weather" containerid="weather">Weather</AnchorLink>
+                            <Link className={`nav-link active `} to="/weather" containerid="weather">Weather</Link>
                         </li>
                         <li className="nav-item">
-                            <AnchorLink className={`nav-link active `} href="/about" >{props.about}</AnchorLink>
+                            <Link className={`nav-link active `} to="/about" >{props.about}</Link>
                         </li>
                         <li className="nav-item">
-                            <AnchorLink className={`nav-link active `} href="/about" >Contact us</AnchorLink>
+                            <Link className={`nav-link active `} to="/contact" >Contact us</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className={`nav-link active `} to="/login" >Login</Link>
                         </li>
 
-                        
+                        <div className={`form-check `} type="checkbox" id="flexSwitchCheckDefault">
+                            <label className="switch">
+                                <input type="checkbox" onClick={props.toggleMode}/>
+                                <span className={`slider border border-${props.mode==='light'?'warning':'light'} bg-${props.mode==='light'?'warning':'dark'}`  }></span>
+                            </label>
+                        </div>
                     </ul>
                     
-                    
-                {/* toggleButton */}
-                <div className={`form-check form-switch `}>
-                    <input className={`form-check-input bg-${props.mode === 'light'?'white':'dark'} border-${props.mode === 'light'?'dark': 'white'}`} onClick={props.toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
-                    <label className={`form-check-label text-${props.mode==='light'?'dark':'light'}`} htmlFor="flexSwitchCheckDefault">{props.mode === 'light'?'Dark Mode':'Light Mode'}</label>
-                </div>
                 </div>
 
             </div>
